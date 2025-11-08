@@ -1,0 +1,19 @@
+pkgbase = better-chromium
+	pkgdesc = Chromium with patches for MV2 support and more.
+	pkgver = 11.08.25.12PM
+	pkgrel = 1
+	url = https://github.com/zanderlewis/better-chromium
+	arch = x86_64
+	license = BSD
+	depends = glib2
+	depends = gtk3
+	depends = libxss
+	depends = alsa-lib
+	depends = cups
+	depends = libpulse
+	depends = libva
+	optdepends = ttf-liberation: for font rendering
+	source = better-chromium-11.08.25.12PM-linux-x86_64.tar.gz::https://github.com/zanderlewis/better-chromium/releases/download/v11.08.25.12PM/better-chromium-11.08.25.12PM-linux-x86_64.tar.gz
+	sha256sums = 0980ba8591fdc41c87b6db8c7fcf46ef3a24f8140eab809a5e1ea474b0abdba5
+
+pkgname = better-chromium

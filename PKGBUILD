@@ -1,6 +1,6 @@
 # Maintainer: Zander Lewis <zander@zanderlewis.dev>
 pkgname=better-chromium
-pkgver=LATEST_VERSION
+pkgver=11.08.25.12PM
 pkgrel=1
 pkgdesc="Chromium with patches for MV2 support and more."
 arch=('x86_64')
@@ -9,7 +9,7 @@ license=('BSD')
 depends=('glib2' 'gtk3' 'libxss' 'alsa-lib' 'cups' 'libpulse' 'libva')
 optdepends=('ttf-liberation: for font rendering')
 source=("${pkgname}-${pkgver}-linux-x86_64.tar.gz::https://github.com/zanderlewis/better-chromium/releases/download/v${pkgver}/better-chromium-${pkgver}-linux-x86_64.tar.gz")
-sha256sums=('SKIP')  # Update this with actual sha256sum
+sha256sums=('0980ba8591fdc41c87b6db8c7fcf46ef3a24f8140eab809a5e1ea474b0abdba5')
 
 package() {
     install -d "$pkgdir/opt/better-chromium"
