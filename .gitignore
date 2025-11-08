@@ -1,0 +1,4 @@
+# Ignore build directories
+chromium-src/
+depot_tools/
+out/
