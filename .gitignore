@@ -2,3 +2,5 @@
 chromium-src/
 depot_tools/
 out/
+release-build/
+*.tar.gz

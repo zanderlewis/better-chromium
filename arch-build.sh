@@ -87,8 +87,7 @@ gclient runhooks
 
 # Configure build
 echo "Configuring build..."
-# Use mold linker for faster linking and enable high parallelism with 96GB RAM
-gn gen "$OUT_DIR" --args='is_debug=false enable_nacl=false is_component_build=false symbol_level=0 use_mold=true'
+gn gen "$OUT_DIR" --args='is_debug=false enable_nacl=false is_component_build=false symbol_level=0 use_mold=true is_cfi=false'
 
 # Build Chromium with maximum parallelism
 echo "Building Chromium..."
