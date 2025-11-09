@@ -4,7 +4,7 @@ set -euo pipefail
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 OUT_DIR="$SCRIPT_DIR/chromium-src/src/out/Default"
 RELEASE_DIR="$SCRIPT_DIR/release-build"
-VERSION=$(git describe --tags --always 2>/dev/null || echo "dev")
+VERSION=$(git -C "$SCRIPT_DIR" rev-parse --short HEAD 2>/dev/null || echo "dev")
 
 echo "Creating GitHub release package..."
 
@@ -57,12 +57,6 @@ exec "$SCRIPT_DIR/chrome" \
     "$@"
 EOF
 chmod +x "$RELEASE_DIR/better-chromium/better-chromium"
-
-# Create README for release
-cat > "$RELEASE_DIR/better-chromium/README.md" << 'EOF'
-# Release 11.08.25.12PM.2
-This release changes the default search engine to DuckDuckGo. Using Chromium built on 11/08/25 at 12PM
-EOF
 
 echo "Setting permissions..."
 # Make executables
