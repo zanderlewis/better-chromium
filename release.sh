@@ -79,6 +79,12 @@ cd "$RELEASE_DIR"
 tar czf "$ARCHIVE_NAME" better-chromium/
 mv "$ARCHIVE_NAME" "$SCRIPT_DIR/"
 
+# Release on GitHub
+echo "Creating GitHub release..."
+gh release create v${VERSION} "$SCRIPT_DIR/$ARCHIVE_NAME"
+
+echo "✓ GitHub release created: v${VERSION}"
+
 echo "✓ Release package created: $SCRIPT_DIR/$ARCHIVE_NAME"
 echo ""
 echo "Next steps:"
