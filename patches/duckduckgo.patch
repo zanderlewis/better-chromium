@@ -7,6 +7,6 @@
          regional_prepopulated_engines) {
    return FindPrepopulatedEngineInternal(prefs, regional_prepopulated_engines,
 -                                        google.id,
-+                                        92,  // DuckDuckGo
++                                        duckduckgo.id,
                                          /*use_first_as_fallback=*/true);
  }
