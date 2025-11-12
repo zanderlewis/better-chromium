@@ -1,0 +1,33 @@
+# Quilt patch series for Better Chromium
+# Patches are applied in order from top to bottom
+
+# Manifest v2 support
+mv2.patch
+
+# DuckDuckGo as default search engine  
+duckduckgo.patch
+
+# Additional search engines configuration
+additional-search-engines.patch
+
+# Always use local new tab page (GrapheneOS)
+0049-always-use-local-new-tab-page.patch
+
+# Mark non-secure origins as dangerous (GrapheneOS)
+0050-mark-non-secure-origins-as-dangerous.patch
+
+# DoH (DNS over HTTPS) improvements (Cromite)
+DoH-improvements.patch
+
+# Reduce HTTP headers in DoH requests (Cromite)
+Reduce-HTTP-headers-in-DoH-requests-to-bare-minimum.patch
+
+# Disable Google API key warnings (Ungoogled Chromium)
+google-api-warning.patch
+0013-disable-missing-key-warning.patch
+
+# Add flag to close window with last tab (Ungoogled Chromium)
+add-flag-to-close-window-with-last-tab.patch
+
+# Prevent URL elisions in omnibox (Thorium)
+prevent-url-elisions.patch

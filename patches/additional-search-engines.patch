@@ -1,0 +1,12 @@
+--- a/third_party/search_engines_data/resources/definitions/prepopulated_engines.json
++++ b/third_party/search_engines_data/resources/definitions/prepopulated_engines.json
+@@ -123,7 +123,7 @@
+       "keyword": "duckduckgo.com",
+       "favicon_url": "https://duckduckgo.com/favicon.ico",
+       "base_builtin_resource_id": "SEARCH_ENGINE_DUCKDUCKGO",
+       "logo_url": "https://staticcdn.duckduckgo.com/serp-fe/www/logos/dynamic/DuckDuckGoLogo.png",
+-      "search_url": "https://duckduckgo.com/?q={searchTerms}",
++      "search_url": "https://duckduckgo.com/?q={searchTerms}&t=canonical",
+       "suggest_url": "https://duckduckgo.com/ac/?q={searchTerms}&type=list",
+       "new_tab_url": "https://duckduckgo.com/chrome_newtab",
+       "type": "SEARCH_ENGINE_DUCKDUCKGO",
