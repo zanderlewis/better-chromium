@@ -153,7 +153,6 @@ export LD_LIBRARY_PATH="$SCRIPT_DIR:$LD_LIBRARY_PATH"
 
 # Run chrome with necessary flags for standalone mode
 exec "$SCRIPT_DIR/chrome" \\
-    --no-sandbox \\
     "$@"
 ''')
     launcher_path.chmod(0o755)
